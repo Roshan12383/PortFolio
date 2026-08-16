@@ -1,0 +1,23 @@
+/* index.css */
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #070b12;
+    color: #e2e8f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
