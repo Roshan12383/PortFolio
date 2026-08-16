@@ -1,5 +1,5 @@
 import  { useState, useRef } from "react";
-
+import { serverUrl } from "../App";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -51,7 +51,7 @@ export default function Contact() {
     setStatus({ type: "", message: "" });
 
     try {
-      const res = await fetch("http://localhost:3501/api/contact", {
+      const res = await fetch(serverUrl+"/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
