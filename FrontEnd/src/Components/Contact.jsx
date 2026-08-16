@@ -1,5 +1,9 @@
 import  { useState, useRef } from "react";
 import { serverUrl } from "../App";
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
