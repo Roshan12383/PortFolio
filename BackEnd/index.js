@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://portfolio-2-w8vy.onrender.com",
+    origin: "https://roshanfront-dev.onrender.com",
     credentials: true
 }));
 
