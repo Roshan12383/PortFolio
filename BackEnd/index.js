@@ -4,7 +4,7 @@ dotenv.config();
 import cors from "cors"
 import connectDb from "./config/connectDb.js";
 import userrouter from "./routes/userRoute.js";
-const port = process.env.PORT;
+const port = process.env.PORT || 3501;
 const app = express();
 
 app.use(express.json());
