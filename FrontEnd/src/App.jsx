@@ -1,7 +1,7 @@
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
-export const serverUrl="http://localhost:3501"
+export const serverUrl="https://portfolio-1-2ybz.onrender.com"
 function App(){
   return(
    <>
