@@ -6,7 +6,7 @@ export const submitMessage = async(req, res) => {
         const { name, email, message } = req.body;
 
         if (!name || !email || !message) {
-            res.status(400).json({ message: "All Field are required" });
+            return res.status(400).json({ message: "All Field are required" });
         }
 
         const newMessage = await User.create({
@@ -17,8 +17,8 @@ export const submitMessage = async(req, res) => {
 
         await sendMail({ name, email, message });
 
-        res.status(201).json({ message: "Message sent successfully" });
+        return res.status(201).json({ message: "Message sent successfully" });
     } catch (error) {
-        res.status(500).json({ message: "Something went wrong" });
+        return res.status(500).json({ message: "Something went wrong" });
     }
 }
